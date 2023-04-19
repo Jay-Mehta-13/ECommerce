@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    background-color: #6930c3;
+    min-height: 100vh;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #6930c3;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #000000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ff0000;
+}
+
+.navbar {
+    margin: 27px auto;
+    top: 27px;
+    position: sticky;
+    width: 730px;
+    background-color: #34495e;
+    border-radius: 8px;
+    font-size: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.navbar a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+
+a:nth-child(1) {
+    width: 100px;
+}
+
+a:nth-child(2) {
+    width: 160px;
+}
+
+a:nth-child(3) {
+    width: 140px;
+}
+
+a:nth-child(4) {
+    width: 130px;
+}
+
+a:nth-child(5) {
+    width: 100px;
+}
+
+a:nth-child(6) {
+    width: 100px;
+}
+
+.navbar .start-home,
+a:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0;
+    background-color: #1abc9c;
+}
+
+nav .start-about,
+a:nth-child(2):hover~.animation {
+    width: 160px;
+    left: 100px;
+    background-color: #e74c3c;
+}
+
+
+nav .start-blog,
+a:nth-child(3):hover~.animation {
+    width: 140px;
+    left: 260px;
+    background-color: #3498db;
+}
+
+nav .start-portefolio,
+a:nth-child(4):hover~.animation {
+    width: 130px;
+    left: 400px;
+    background-color: #9b59b6;
+}
+
+nav .start-contact,
+a:nth-child(5):hover~.animation {
+    width: 100px;
+    left: 530px;
+    background-color: #e67e22;
+}
+
+nav .start-contact,
+a:nth-child(6):hover~.animation {
+    width: 100px;
+    left: 630px;
+    background-color: #e622dc;
+}
+
+/* Carousel */
+
+.carousel {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.card {
+    width: calc(100% / 2);
+    flex: 1 0 auto;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.left,
+.right {
+    margin: 5px;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+
+.left *,
+.right * {
+    pointer-events: none;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Appliances Cards */
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.cardContainer {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cardContainer .card {
+    height: 35vh;
+    width: 20vw;
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.cardContainer .card .imgWrapper {
+    overflow: hidden;
+    height: 75%;
+    width: 100%;
+}
+
+.cardContainer .card .imgWrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.details {
+    padding: 8px 0;
+}
+
+.cardContainer .card * {
+    color: white;
+    font-size: 1.4rem;
+}
