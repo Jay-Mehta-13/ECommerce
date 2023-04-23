@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(200, 200, 200);
+}
+
+.back {
+    background-color: red;
+    color: white;
+    font-size: 1.3em;
+    padding: 5px 10px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    width: 80vh;
+    height: 80vh;
+}
+
+.container .items {
+    background-color: white;
+    width: 50%;
+    height: 100%;
+}
+
+.container .items>span,
+.bill>span {
+    font-size: 1.6em;
+}
+
+.items .item {
+    border: 2px solid red;
+}
+
+.item .thumbnail {
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    height: 25%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.thumbnail img {
+    height: 100%;
+    width: 25%;
+    object-fit: contain;
+}
+
+.thumbnail .details :first-child {
+    font-size: 1.3em;
+}
+
+.details {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.quantity {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.quantity>div {
+    font-size: 1.3em;
+    padding: 0 5px;
+
+}
+
+.quantity>div:nth-child(2n+1) {
+    cursor: pointer;
+    background-color: grey;
+}
+
+.bill {
+    background-color: grey;
+    width: 50%;
+}
+
+.bill .structure {
+    color: aliceblue;
+    display: flex;
+    font-size: 1.2em;
+    height: 80%;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+}

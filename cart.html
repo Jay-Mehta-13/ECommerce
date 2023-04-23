@@ -5,8 +5,42 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Cart</title>
+		<link rel="stylesheet" href="cart.css" />
 	</head>
 	<body>
-		Cart Here
+		<a href="./index.html" class="back">Back</a>
+		<div class="container">
+			<div class="items">
+				<span>Items in Cart</span>
+				<div class="item">
+					<div class="thumbnail">
+						<img src="/Assests/appliance1.jpg" alt="" />
+						<div class="details">
+							<span>Appliance 1</span>
+							<span>9900 Rs</span>
+						</div>
+					</div>
+					<div class="quantity">
+						<div class="increase">+</div>
+						<div class="number">1</div>
+						<div class="decrease">-</div>
+					</div>
+				</div>
+			</div>
+			<div class="bill">
+				<span>Billing Info</span>
+				<div class="structure">
+					<div class="itemCost">Item Cost : 9900</div>
+					<div class="numberOfItems">Number of Items : 1</div>
+					<div class="totalPrice">Total Price : 9900</div>
+					<div class="tax">
+						<div class="cgst">CGST : 00</div>
+						<div class="sgst">SGST : 00</div>
+						<div class="totalGst">Total GST : 00</div>
+					</div>
+					<div class="total">Total : 9900</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
